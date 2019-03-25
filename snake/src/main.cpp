@@ -2,7 +2,6 @@
 
 #include <Windows.h>
 #include "ASCIIui.h"
-#include <iostream>
 #include <string>
 
 //Snake
@@ -11,16 +10,16 @@
 ASCIIui* app = nullptr;
 Game game;
 
-
+    ///*
 int WINAPI WinMain(
 	HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
 	LPSTR lpCmdLine,
 	int nCmdShow)
-
+	//*/
 //int main(int argc, char**argv)
 {
-	SDL_SetMainReady();
+	//SDL_SetMainReady();
 	int FPS = 30;
 	int width = 28;
 	int height = 18;

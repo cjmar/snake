@@ -1,5 +1,4 @@
 #include "Game.h"
-#include <iostream>
 #include <sstream>
 #include <fstream>
 #include <algorithm>
@@ -321,10 +320,6 @@ void Game::recordScore(bool won_game)
 			int aNumber = scores[i];
 			fout.write((char*) &aNumber, sizeof(int));
 		}
-	}
-	else
-	{
-		std::cout << "Can't open File\n";
 	}
 	fout.close();
 }

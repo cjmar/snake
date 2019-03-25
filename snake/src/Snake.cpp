@@ -108,5 +108,21 @@ void Snake::setDirection(std::pair<int, int> direct_in)
 		movements.pop();
 		
 	movements.push(direct_in);
-	direction = movements.top();
+	if (addDirections(direction, movements.top()) != 0)
+	{
+		direction = movements.top();
+	}
+}
+
+
+int Snake::addDirections(std::pair<int, int> d1, std::pair<int, int> d2)
+{
+	int d3 = d1.first + d2.first;
+	int d4 = d1.second + d2.second;
+	
+	if (d3 == 0 || d4 == 0)
+	{
+		return 0;
+	}
+	else return 1;
 }
