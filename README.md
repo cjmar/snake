@@ -1,4 +1,4 @@
 # snake
-Snake game
+Snake game built on top of SDL2
 
 ![alt text](https://github.com/cjmar/snake/blob/master/snake/data/snake.png)
