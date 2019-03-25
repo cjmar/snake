@@ -28,6 +28,7 @@ private:
 	std::vector<std::pair<int, int>> body;
 	std::pair<int, int> direction;
 	std::stack<std::pair<int, int>> movements;
+	int addDirections(std::pair<int, int>, std::pair<int, int>);
 };
 
 #endif
